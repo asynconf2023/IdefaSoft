@@ -5,4 +5,3 @@
 - Avoir python d'installé
 - Tout d'abord, installer le module `Django` : `pip install Django`
 - Lancer le programme avec la commande `python manage.py runserver`
-- 
