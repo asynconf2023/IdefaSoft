@@ -1,0 +1,260 @@
+[
+  {
+    "model": "EcoFootprintCalc.VehicleType",
+    "pk": 1,
+    "fields": {
+      "name": "citadine",
+      "note": 8
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.VehicleType",
+    "pk": 2,
+    "fields": {
+      "name": "cabriolet",
+      "note": 6
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.VehicleType",
+    "pk": 3,
+    "fields": {
+      "name": "berline",
+      "note": 6.5
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.VehicleType",
+    "pk": 4,
+    "fields": {
+      "name": "suv",
+      "note": 4
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.VehicleType",
+    "pk": 5,
+    "fields": {
+      "name": "4x4",
+      "note": 4
+    }
+  },
+
+  {
+    "model": "EcoFootprintCalc.Energy",
+    "pk": 1,
+    "fields": {
+      "name": "essence",
+      "note": 5
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Energy",
+    "pk": 2,
+    "fields": {
+      "name": "electrique",
+      "note": 9
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Energy",
+    "pk": 3,
+    "fields": {
+      "name": "gaz",
+      "note": 6
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Energy",
+    "pk": 4,
+    "fields": {
+      "name": "diesel",
+      "note": 4
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Energy",
+    "pk": 5,
+    "fields": {
+      "name": "hybride",
+      "note": 7
+    }
+  },
+
+  {
+    "model": "EcoFootprintCalc.Kilometers",
+    "pk": 1,
+    "fields": {
+      "start": 5,
+      "end": 10,
+      "note": 9
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Kilometers",
+    "pk": 2,
+    "fields": {
+      "start": 10,
+      "end": 15,
+      "note": 7
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Kilometers",
+    "pk": 3,
+    "fields": {
+      "start": 15,
+      "end": 20,
+      "note": 5
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Kilometers",
+    "pk": 4,
+    "fields": {
+      "start": 20,
+      "end": 25,
+      "note": 3
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Kilometers",
+    "pk": 5,
+    "fields": {
+      "start": 25,
+      "end": 30,
+      "note": 1
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Years",
+    "pk": 1,
+    "fields": {
+      "start": 1960,
+      "end": 1970,
+      "note": 1
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Years",
+    "pk": 2,
+    "fields": {
+      "start": 1970,
+      "end": 1980,
+      "note": 2
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Years",
+    "pk": 3,
+    "fields": {
+      "start": 1980,
+      "end": 1990,
+      "note": 3
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Years",
+    "pk": 4,
+    "fields": {
+      "start": 1990,
+      "end": 2000,
+      "note": 4
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Years",
+    "pk": 5,
+    "fields": {
+      "start": 2000,
+      "end": 2010,
+      "note": 5
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Years",
+    "pk": 6,
+    "fields": {
+      "start": 2010,
+      "end": 2023,
+      "note": 7
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.InterestRate",
+    "pk": 1,
+    "fields": {
+      "start": 0,
+      "end": 10,
+      "percentage": 3
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.InterestRate",
+    "pk": 2,
+    "fields": {
+      "start": 11,
+      "end": 15,
+      "percentage": 2.74
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.InterestRate",
+    "pk": 3,
+    "fields": {
+      "start": 16,
+      "end": 25,
+      "percentage": 2.52
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.InterestRate",
+    "pk": 4,
+    "fields": {
+      "start": 26,
+      "end": 33,
+      "percentage": 2.10
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.InterestRate",
+    "pk": 5,
+    "fields": {
+      "start": 33,
+      "end": 40,
+      "percentage": 1.85
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Passengers",
+    "pk": 1,
+    "fields": {
+      "number": 1,
+      "percentage": 0.11
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Passengers",
+    "pk": 2,
+    "fields": {
+      "number": 2,
+      "percentage": -0.17
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Passengers",
+    "pk": 3,
+    "fields": {
+      "number": 3,
+      "percentage": -0.29
+    }
+  },
+  {
+    "model": "EcoFootprintCalc.Passengers",
+    "pk": 4,
+    "fields": {
+      "number": 4,
+      "percentage": -0.53
+    }
+  }
+]

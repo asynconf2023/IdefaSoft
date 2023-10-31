@@ -1,0 +1,78 @@
+{% load static %}
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Outil de calcul de l'empreinte écologique</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<div class="header">
+    <h1>Outil de calcul de l'empreinte écologique</h1>
+</div>
+<div class="content">
+    <div class="left-side">
+        <form class="form" method="POST">
+            {% csrf_token %}
+            <p class="title">Calculateur</p>
+            <p class="message">Sélectionnez les options correspondant aux caractéristiques de votre véhicule, pour
+                savoir quel est son empreinte
+            </p>
+            {{ form }}
+            <input type="submit" value="Calculer l'empreinte" class="submit">
+            <p class="edit">Besoin de modifier les critères ? <a href="{% url 'list' %}">Modifier</a></p>
+        </form>
+    </div>
+    <div class="right-side">
+        <div class="center">
+            {% if interest_rate %}
+                <h1>Résultats</h1>
+                <table class="table-fill">
+                    <thead>
+                    <tr>
+                        <th class="text-left">Catégorie</th>
+                        <th class="text-left">Résultat</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table-hover">
+                    <tr>
+                        <td class="text-left">Note du véhicule</td>
+                        <td class="text-left">{{ vehicle_note }}/10</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">Note de l'énergie</td>
+                        <td class="text-left">{{ energy_note }}/10</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">Note du kilométrage</td>
+                        <td class="text-left">{{ kilometer_note }}/10</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">Note de l'année</td>
+                        <td class="text-left">{{ year_note }}/10</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">Score du véhicule</td>
+                        <td class="text-left">{{ vehicle_score }}/40</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">Bonus/Malus du nombre de passagers</td>
+                        <td class="text-left">{{ passenger_percentage }}%</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">Taux d'interet final</td>
+                            <td class="text-left">{{ interest_rate }}%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            {% else %}
+                <h1>Les résultats seront affichés ici.</h1>
+            {% endif %}
+        </div>
+    </div>
+</div>
+</body>
+</html>
