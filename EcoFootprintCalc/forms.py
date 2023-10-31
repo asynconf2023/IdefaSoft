@@ -17,17 +17,17 @@ class InterestRateForm(forms.Form):
                                     initial=Energy.objects.first()
                                     )
     kilometer = forms.IntegerField(min_value=Kilometers.objects.aggregate(Min('start'))['start__min'],
-                                   max_value=Kilometers.objects.aggregate(Max('end'))['end__max'],
+                                   max_value=Kilometers.objects.aggregate(Max('end'))['end__max'] -1,
                                    label="Kilomètres parcourus par an (en milliers)",
                                    widget=forms.NumberInput(attrs={'placeholder': '25', 'class': 'input'})
                                    )
     year = forms.IntegerField(min_value=Years.objects.aggregate(Min('start'))['start__min'],
-                              max_value=Years.objects.aggregate(Max('end'))['end__max'],
+                              max_value=Years.objects.aggregate(Max('end'))['end__max'] -1,
                               label="Année du véhicule",
                               widget=forms.NumberInput(attrs={'placeholder': '2009', 'class': 'input'})
                               )
     passager_number = forms.IntegerField(min_value=Passengers.objects.aggregate(Min('number'))['number__min'],
-                                         max_value=Passengers.objects.aggregate(Max('number'))['number__max'],
+                                         max_value=Passengers.objects.aggregate(Max('number'))['number__max'] -1,
                                          label="Nombre de passagers",
                                          widget=forms.NumberInput(attrs={'placeholder': '1', 'class': 'input'})
                                          )

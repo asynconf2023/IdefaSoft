@@ -2,6 +2,6 @@
 
 ## Instructions pour lancer le projet
 
-- Avoir python d'installé
-- Tout d'abord, installer le module `Django` : `pip install Django`
-- Lancer le programme avec la commande `python manage.py runserver`
+- Avoir python3 d'installé
+- Tout d'abord, installer le module `Django` : `pip3 install Django`
+- Lancer le programme avec la commande `python3 manage.py runserver`
